@@ -1,0 +1,48 @@
+@import '../../../styles.scss';
+.steps {
+    margin-top: 100px
+}
+h1 {
+    font-family: $title-font;
+    text-align: center;
+    font-size: 55px;
+    color: $main-color
+}
+span {
+    color: #fff;
+    background: linear-gradient(to bottom, transparent 6%, $main-color 6%, $main-color 94%, transparent 94%);
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.card {
+    width: 47%;
+    margin: 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    img {
+        width: 340px
+    }
+    h2 {
+        font-family: $title-font;
+        font-size: 50px;
+        padding: 50px 5px;
+        color: $main-color
+    }
+}
+@media screen and (max-width: 800px) {
+    .cards {
+        flex-direction: column;
+        margin: 50px auto;
+    }
+    .card {
+        width: 90%;
+        img {width: 100%}
+        h2 { font-size: 30px;}
+    }
+    h1 { font-size: 45px;}
+}

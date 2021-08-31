@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>Your Online Tutors</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non rutrum tellus. <br>
+        Nulla leo mi, facilisis sed justo eget, hendrerit efficitur neque.</p>
+    <div class="content">
+        <div class="right">
+            <div class="group">
+                <label>Search a Tutor</label><br>
+                <input class="form-control" type="text" placeholder="Search">
+            </div>
+            <div class="group">
+                <label>Select a Language</label><br>
+                <input class="form-control" type="text" placeholder="Select">
+            </div>
+        </div>
+        <div class="left">
+            <div class="card" *ngFor="let t of tutors">
+                <img class="avatar" alt="avatar" src={{t.avatar}}>
+                <div class="country"><img class="flag" alt="flag" src={{t.flag}}>{{t.country}}</div>
+                <div class="desc">{{t.desc}}</div>
+            </div>
+        </div>
+    </div>
+</div>

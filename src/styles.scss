@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+$main-font: 'Open Sans', sans-serif;
+$title-font: 'Oswald', sans-serif;
+$main-color: #30475E;
+$secondary-color: #F05454;
+body { background-color: #F8F8F8;}

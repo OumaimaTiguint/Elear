@@ -1,0 +1,18 @@
+@import '../styles.scss';
+
+.navbar-brand, .navbar-brand:hover {
+    font-family: $title-font;
+    color: black
+}
+.nav-item a {
+    font-family: $main-font;
+    color: black
+}
+.nav-item button {
+    font-family: $title-font;
+    color: #fff;
+    background-color: $secondary-color;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-left: 3px
+}
