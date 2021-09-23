@@ -14,7 +14,7 @@ p {
 }
 .content {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     margin-top: 50px;
 }
 .group { margin-top: 30px}
@@ -29,6 +29,8 @@ p {
         border-radius: 20px;
         border: 1px solid rgba(0,0,0, 25%);
         filter: drop-shadow(5px 5px 5px rgba(0,0,0, 25%));
+        padding: 5px 10px;
+        width: 80%
     }
 }
 .left {
@@ -36,21 +38,24 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     .card {
-        filter: drop-shadow(5px 5px 5px rgba(0,0,0, 25%));
-        border-radius: 10px;
         padding: 20px;
         margin: 10px;
         text-align: left;
-        width: 30%;
+        width: 25%;
         .avatar {
-            width: 60%;
-            margin: auto
+            width: 50%;
+            margin: auto;
+            display: block;
         }
         .flag {
-            width: 30px;
-            padding: 2px
+            width: 18px;
+            margin-right: 2px
         }
-        .country {font-family: $title-font;}
+        .country {
+            font-family: $title-font;
+            padding: 0;
+            margin: 0
+        }
         .desc {
             font-family: $main-font;
         }
@@ -64,7 +69,7 @@ p {
     .left {
         margin-top: 40px;
         .card {
-            width: 47%;
+            width: 40%;
             padding: 10px;
             margin: 5px
         }

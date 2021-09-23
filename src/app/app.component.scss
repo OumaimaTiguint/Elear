@@ -1,12 +1,32 @@
 @import '../styles.scss';
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.container-fluid {
+    width: 90%;
+    margin: 20px auto;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.nav-item { display: inline;}
+.nav:last-of-type {
+    text-align: end;
+}
 .navbar-brand, .navbar-brand:hover {
     font-family: $title-font;
-    color: black
+    color: $main-color;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: left;
 }
 .nav-item a {
     font-family: $main-font;
-    color: black
+    color: black;
+    text-decoration: none;
+    margin: 10px
 }
 .nav-item button {
     font-family: $title-font;
@@ -15,4 +35,10 @@
     border-radius: 10px;
     padding: 5px 10px;
     margin-left: 3px
+}
+
+@media screen and (max-width: 800px) {
+    .nav-item a { margin: 3px}
+    .nav:last-of-type {text-align: left;}
+    .nav-item button { margin-left: 0;}
 }
