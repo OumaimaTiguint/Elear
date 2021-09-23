@@ -40,7 +40,7 @@ export class IntroComponent implements OnInit {
 
   ngOnInit(): void {
     //setInterval(this.myTimer(), 1000);
-    this.myTimer()
+    //this.myTimer()
   }
 
 }
